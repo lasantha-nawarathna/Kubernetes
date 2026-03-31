@@ -1,0 +1,314 @@
+/* ============================================================
+   DESIGN SYSTEM: "Blueprint Engineering"
+   Swiss International Typographic Style meets Modern DevDocs
+   
+   Palette: Off-white base, slate navy text, electric blue accent
+   Typography: Space Grotesk (headings), Source Serif 4 (body), JetBrains Mono (code)
+   Difficulty tiers: green (beginner), yellow (intermediate), blue (advanced), red (expert)
+   ============================================================ */
+
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  
+  /* Custom K8s design tokens */
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Source Serif 4', serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+:root {
+  --radius: 0.5rem;
+  
+  /* Blueprint Engineering palette */
+  --background: oklch(0.985 0.002 85);
+  --foreground: oklch(0.18 0.02 250);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.18 0.02 250);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.18 0.02 250);
+  
+  /* Electric blue primary */
+  --primary: oklch(0.52 0.22 259);
+  --primary-foreground: oklch(0.98 0 0);
+  
+  --secondary: oklch(0.95 0.005 250);
+  --secondary-foreground: oklch(0.25 0.03 250);
+  --muted: oklch(0.96 0.003 250);
+  --muted-foreground: oklch(0.52 0.02 250);
+  --accent: oklch(0.93 0.015 259);
+  --accent-foreground: oklch(0.25 0.03 250);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(0.88 0.008 250);
+  --input: oklch(0.88 0.008 250);
+  --ring: oklch(0.52 0.22 259);
+  
+  /* Charts */
+  --chart-1: oklch(0.52 0.22 259);
+  --chart-2: oklch(0.65 0.18 145);
+  --chart-3: oklch(0.72 0.18 85);
+  --chart-4: oklch(0.55 0.22 27);
+  --chart-5: oklch(0.55 0.22 300);
+  
+  /* Sidebar */
+  --sidebar: oklch(0.16 0.025 250);
+  --sidebar-foreground: oklch(0.88 0.01 250);
+  --sidebar-primary: oklch(0.52 0.22 259);
+  --sidebar-primary-foreground: oklch(0.98 0 0);
+  --sidebar-accent: oklch(0.22 0.025 250);
+  --sidebar-accent-foreground: oklch(0.88 0.01 250);
+  --sidebar-border: oklch(0.25 0.02 250);
+  --sidebar-ring: oklch(0.52 0.22 259);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Source Serif 4', serif;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+  }
+  code, pre, kbd, samp {
+    font-family: 'JetBrains Mono', monospace;
+  }
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  a[href] {
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .flex {
+    min-height: 0;
+    min-width: 0;
+  }
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      max-width: 1280px;
+    }
+  }
+
+  /* Difficulty tier badges */
+  .badge-beginner {
+    @apply bg-emerald-100 text-emerald-800 border border-emerald-200;
+  }
+  .badge-intermediate {
+    @apply bg-amber-100 text-amber-800 border border-amber-200;
+  }
+  .badge-advanced {
+    @apply bg-blue-100 text-blue-800 border border-blue-200;
+  }
+  .badge-expert {
+    @apply bg-red-100 text-red-800 border border-red-200;
+  }
+
+  /* Code block styling */
+  .code-block {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    background: oklch(0.12 0.02 250);
+    color: oklch(0.88 0.01 250);
+    border-radius: 0.5rem;
+    padding: 1.25rem 1.5rem;
+    overflow-x: auto;
+    position: relative;
+  }
+  
+  /* Prose content */
+  .prose-k8s {
+    font-family: 'Source Serif 4', serif;
+    font-size: 1rem;
+    line-height: 1.75;
+    color: oklch(0.25 0.02 250);
+  }
+  .prose-k8s h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    color: oklch(0.18 0.02 250);
+  }
+  .prose-k8s h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: oklch(0.22 0.02 250);
+  }
+  .prose-k8s p {
+    margin-bottom: 1rem;
+  }
+  .prose-k8s ul, .prose-k8s ol {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+  }
+  .prose-k8s li {
+    margin-bottom: 0.25rem;
+  }
+  .prose-k8s code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.875em;
+    background: oklch(0.93 0.015 259);
+    color: oklch(0.35 0.18 259);
+    padding: 0.1em 0.35em;
+    border-radius: 0.25rem;
+  }
+  .prose-k8s pre {
+    margin: 1.25rem 0;
+  }
+  .prose-k8s table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.25rem 0;
+    font-family: 'Source Serif 4', serif;
+    font-size: 0.9rem;
+  }
+  .prose-k8s th {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    text-align: left;
+    padding: 0.6rem 1rem;
+    background: oklch(0.93 0.015 259);
+    color: oklch(0.25 0.03 250);
+    border-bottom: 2px solid oklch(0.52 0.22 259);
+  }
+  .prose-k8s td {
+    padding: 0.6rem 1rem;
+    border-bottom: 1px solid oklch(0.88 0.008 250);
+  }
+  .prose-k8s tr:hover td {
+    background: oklch(0.97 0.003 250);
+  }
+
+  /* Sidebar nav item */
+  .nav-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.375rem;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: oklch(0.75 0.01 250);
+    transition: all 0.15s ease;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .nav-item:hover {
+    background: oklch(0.22 0.025 250);
+    color: oklch(0.92 0.01 250);
+  }
+  .nav-item.active {
+    background: oklch(0.52 0.22 259 / 0.2);
+    color: oklch(0.75 0.18 259);
+    border-left: 2px solid oklch(0.52 0.22 259);
+  }
+
+  /* Chapter card */
+  .chapter-card {
+    background: white;
+    border: 1px solid oklch(0.88 0.008 250);
+    border-radius: 0.625rem;
+    padding: 1.25rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  .chapter-card:hover {
+    border-color: oklch(0.52 0.22 259);
+    box-shadow: 0 4px 20px oklch(0.52 0.22 259 / 0.12);
+    transform: translateY(-1px);
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: oklch(0.7 0.01 250);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: oklch(0.52 0.22 259);
+  }
+
+  /* Syntax highlight tokens */
+  .token-keyword { color: oklch(0.72 0.18 300); }
+  .token-string  { color: oklch(0.72 0.18 145); }
+  .token-comment { color: oklch(0.55 0.01 250); font-style: italic; }
+  .token-number  { color: oklch(0.72 0.18 85); }
+  .token-property{ color: oklch(0.72 0.18 200); }
+  .token-value   { color: oklch(0.72 0.18 259); }
+}
