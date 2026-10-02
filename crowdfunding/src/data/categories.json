@@ -1,0 +1,15 @@
+[
+  { "slug": "technology", "name": "Technology", "icon": "Cpu", "description": "Gadgets, hardware and software shaping tomorrow.", "color": "from-sky-500 to-indigo-600", "image": "1498050108023-c5249f4df085" },
+  { "slug": "film", "name": "Film & Video", "icon": "Clapperboard", "description": "Features, documentaries, shorts and web series.", "color": "from-rose-500 to-orange-500", "image": "1485846234645-a62644f84728" },
+  { "slug": "music", "name": "Music", "icon": "Music", "description": "Albums, tours, instruments and music videos.", "color": "from-fuchsia-500 to-purple-600", "image": "1511379938547-c1f69419868d" },
+  { "slug": "games", "name": "Games", "icon": "Gamepad2", "description": "Video games, tabletop and playing cards.", "color": "from-violet-500 to-indigo-600", "image": "1511512578047-dfb367046420" },
+  { "slug": "art", "name": "Art", "icon": "Palette", "description": "Painting, ceramics, sculpture and public art.", "color": "from-amber-500 to-rose-500", "image": "1460661419201-fd4cecdf8a8b" },
+  { "slug": "design", "name": "Design", "icon": "PenTool", "description": "Products, furniture, fashion and architecture.", "color": "from-teal-500 to-emerald-600", "image": "1416879595882-3373a0480b5b" },
+  { "slug": "food", "name": "Food", "icon": "UtensilsCrossed", "description": "Restaurants, food trucks, farms and cookbooks.", "color": "from-orange-500 to-red-500", "image": "1504674900247-0877df9cc836" },
+  { "slug": "community", "name": "Community", "icon": "Users", "description": "Local spaces and projects that bring people together.", "color": "from-emerald-500 to-lime-500", "image": "1507842217343-583bb7270b66" },
+  { "slug": "education", "name": "Education", "icon": "GraduationCap", "description": "Schools, courses, scholarships and learning tools.", "color": "from-blue-500 to-cyan-500", "image": "1522202176988-66273c2fd55f" },
+  { "slug": "environment", "name": "Environment", "icon": "Leaf", "description": "Climate, conservation and sustainable living.", "color": "from-green-500 to-emerald-700", "image": "1505142468610-359e7d316be0" },
+  { "slug": "medical", "name": "Medical", "icon": "HeartPulse", "description": "Healthcare access, treatments and research.", "color": "from-red-500 to-pink-500", "image": "1576091160550-2173dba999ef" },
+  { "slug": "charity", "name": "Charity", "icon": "HandHeart", "description": "Emergency relief, families and non-profits.", "color": "from-pink-500 to-rose-600", "image": "1488521787991-ed7bbaae773c" },
+  { "slug": "startups", "name": "Startups", "icon": "Rocket", "description": "Early-stage companies and equity rounds.", "color": "from-indigo-500 to-blue-700", "image": "1559136555-9303baea8ebd" }
+]

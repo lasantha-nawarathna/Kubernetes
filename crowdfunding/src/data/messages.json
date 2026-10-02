@@ -1,0 +1,35 @@
+[
+  {
+    "id": "c1", "name": "Mira Hoffmann", "subtitle": "Lingo Labs · Lingo Pod", "avatar": "1494790108377-be9c29b29330", "online": true, "unread": 2,
+    "messages": [
+      { "from": "me", "text": "Hi Mira! Quick question — will Lingo Pod support European Portuguese, or only Brazilian?", "time": "10:02" },
+      { "from": "them", "text": "Hi Sofia, thanks for backing us! Both are supported at launch — you can switch accents in the settings.", "time": "10:15" },
+      { "from": "them", "text": "We're also adding Catalan and Basque as a stretch goal if we reach €120k 🙂", "time": "10:16" }
+    ]
+  },
+  {
+    "id": "c2", "name": "Anna Lindqvist", "subtitle": "Backer · Verdant", "avatar": "1544005313-94ddf0286df2", "online": false, "unread": 1,
+    "messages": [
+      { "from": "them", "text": "Just backed Verdant at the Premium tier! Does it ship to Sweden?", "time": "Yesterday" }
+    ]
+  },
+  {
+    "id": "c3", "name": "Cian Byrne", "subtitle": "Northlight Pictures · Echoes of Kepler", "avatar": "1507003211169-0a1dd7228f2d", "online": true, "unread": 0,
+    "messages": [
+      { "from": "them", "text": "Thanks so much for your support. Your name will appear in the end credits!", "time": "Mon" },
+      { "from": "me", "text": "Amazing! Can't wait for the premiere.", "time": "Mon" }
+    ]
+  },
+  {
+    "id": "c4", "name": "Moth Garden Games", "subtitle": "Wanderlight", "avatar": "1506794778202-cad84cf45f1d", "online": false, "unread": 0,
+    "messages": [
+      { "from": "them", "text": "The first backer demo is live — check your email for your Steam key!", "time": "Sep 24" }
+    ]
+  },
+  {
+    "id": "c5", "name": "Fundora Support", "subtitle": "Trust & Safety", "avatar": "", "online": true, "unread": 0,
+    "messages": [
+      { "from": "them", "text": "Hi Sofia, your identity verification is complete. You're all set to receive payouts.", "time": "Sep 12" }
+    ]
+  }
+]

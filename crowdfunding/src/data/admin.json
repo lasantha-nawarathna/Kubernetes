@@ -1,0 +1,35 @@
+{
+  "stats": { "totalUsers": 284310, "activeCampaigns": 3412, "totalRaised": 48720000, "pendingReviews": 27, "reported": 9 },
+  "pending": [
+    { "id": "p1", "title": "Self-Watering Balcony Planter", "creator": "Sofia Martins", "category": "Design", "goal": 30000, "submitted": "30 Sep 2026", "risk": "Low", "image": "1459411552884-841db9b3cc2a", "status": "Pending" },
+    { "id": "p2", "title": "AeroDrone Mini — Foldable 4K Drone", "creator": "SkyForge Labs", "category": "Technology", "goal": 150000, "submitted": "30 Sep 2026", "risk": "Medium", "image": "1473968512647-3e447244af8f", "status": "Pending" },
+    { "id": "p3", "title": "Night Market Documentary", "creator": "Hana Sato", "category": "Film & Video", "goal": 40000, "submitted": "29 Sep 2026", "risk": "Low", "image": "1478720568477-152d9b164e26", "status": "Pending" },
+    { "id": "p4", "title": "Guaranteed 40% Returns Crypto Fund", "creator": "Quantum Yield", "category": "Startups", "goal": 500000, "submitted": "29 Sep 2026", "risk": "High", "image": "1621761191319-c6fb62004040", "status": "Pending" },
+    { "id": "p5", "title": "Animal Shelter Winter Heating", "creator": "Paws Haven Lyon", "category": "Charity", "goal": 12000, "submitted": "28 Sep 2026", "risk": "Low", "image": "1548199973-03cce0bbc87b", "status": "Pending" },
+    { "id": "p6", "title": "Retro Handheld Console", "creator": "Pixel Nomad", "category": "Games", "goal": 80000, "submitted": "28 Sep 2026", "risk": "Medium", "image": "1550745165-9bc0b252726f", "status": "Pending" }
+  ],
+  "reports": [
+    { "id": "r1", "campaign": "Miracle Weight-Loss Patch", "reason": "Misleading health claims", "reports": 14, "date": "1 Oct 2026", "severity": "High" },
+    { "id": "r2", "campaign": "Copy of a Famous Sneaker", "reason": "Intellectual property", "reports": 6, "date": "30 Sep 2026", "severity": "Medium" },
+    { "id": "r3", "campaign": "Help Me Buy a Sports Car", "reason": "Spam / policy violation", "reports": 3, "date": "29 Sep 2026", "severity": "Low" }
+  ],
+  "users": [
+    { "name": "Sofia Martins", "email": "sofia@verdant.garden", "role": "Creator", "campaigns": 5, "joined": "Mar 2020", "status": "Verified" },
+    { "name": "Anna Lindqvist", "email": "anna.l@mail.se", "role": "Backer", "campaigns": 0, "joined": "Jan 2024", "status": "Active" },
+    { "name": "SkyForge Labs", "email": "hello@skyforge.io", "role": "Creator", "campaigns": 1, "joined": "Sep 2026", "status": "Pending KYC" },
+    { "name": "Quantum Yield", "email": "team@qyield.biz", "role": "Creator", "campaigns": 1, "joined": "Sep 2026", "status": "Flagged" },
+    { "name": "Tomás Rivera", "email": "tomas.r@correo.es", "role": "Backer", "campaigns": 0, "joined": "Jun 2023", "status": "Active" },
+    { "name": "Mira Hoffmann", "email": "mira@lingolabs.io", "role": "Creator", "campaigns": 2, "joined": "Feb 2021", "status": "Verified" }
+  ],
+  "payments": [
+    { "id": "PAY-20931", "campaign": "Wanderlight — Indie Adventure Game", "amount": 128400, "fee": 6420, "status": "Scheduled", "date": "17 Oct 2026" },
+    { "id": "PAY-20918", "campaign": "Living Moss Wall Panels", "amount": 38900, "fee": 1945, "status": "Paid out", "date": "22 Sep 2026" },
+    { "id": "PAY-20877", "campaign": "Golden Hour — Debut Album", "amount": 18760, "fee": 938, "status": "On hold", "date": "—" },
+    { "id": "PAY-20850", "campaign": "Harbour Lights Festival", "amount": 52300, "fee": 2615, "status": "Paid out", "date": "9 Sep 2026" }
+  ],
+  "disputes": [
+    { "id": "DSP-1182", "backer": "Jonas Weber", "campaign": "Hydro Cube Starter Kit", "amount": 79, "reason": "Refund not received", "status": "Open", "opened": "28 Sep 2026" },
+    { "id": "DSP-1175", "backer": "Marta Kowalska", "campaign": "Lumen Desk Lamp", "amount": 129, "reason": "Reward not delivered", "status": "Investigating", "opened": "24 Sep 2026" },
+    { "id": "DSP-1160", "backer": "Ahmed Saleh", "campaign": "Trail Runner Socks", "amount": 25, "reason": "Duplicate charge", "status": "Resolved", "opened": "15 Sep 2026" }
+  ]
+}

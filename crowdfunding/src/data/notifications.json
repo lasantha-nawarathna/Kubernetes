@@ -1,0 +1,10 @@
+[
+  { "id": "n1", "type": "milestone", "title": "Your campaign reached 75% of its funding goal.", "body": "Verdant — Smart Indoor Garden just passed €37,500. Share an update to keep the momentum going!", "time": "2 hours ago", "read": false },
+  { "id": "n2", "type": "contribution", "title": "Anna supported your campaign with €99.", "body": "Anna Lindqvist selected the Premium Supporter reward.", "time": "4 hours ago", "read": false },
+  { "id": "n3", "type": "deadline", "title": "Your campaign has 10 days remaining.", "body": "Campaigns typically raise 30% of their total in the final week. Plan your final push.", "time": "Yesterday", "read": false },
+  { "id": "n4", "type": "saved", "title": "A campaign you saved is ending soon.", "body": "Golden Hour — Debut Album Production ends in 4 days and is 85% funded.", "time": "Yesterday", "read": true },
+  { "id": "n5", "type": "comment", "title": "New comment on Verdant", "body": "Marco asked: \"Will the EU plug adapter be included?\"", "time": "2 days ago", "read": true },
+  { "id": "n6", "type": "review", "title": "Your campaign is under review.", "body": "Self-Watering Balcony Planter has been submitted. Reviews usually take 1–2 business days.", "time": "3 days ago", "read": true },
+  { "id": "n7", "type": "update", "title": "Lingo Pod posted an update", "body": "Update #4: First production samples are here — see the unboxing video.", "time": "4 days ago", "read": true },
+  { "id": "n8", "type": "milestone", "title": "Verdant is fully funded! 🎉", "body": "You've reached 100% of your goal with 12 days still to go.", "time": "5 days ago", "read": true }
+]

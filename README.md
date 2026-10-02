@@ -70,3 +70,7 @@ The server listens on **`PORT`** if set, otherwise **3000**. It serves static fi
 ## License
 
 MIT
+
+## Crowdfunding UI prototype
+
+The `crowdfunding/` folder holds a separate, standalone Next.js prototype of a crowdfunding platform (Fundora). See [`crowdfunding/README.md`](crowdfunding/README.md).

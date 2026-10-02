@@ -1,0 +1,35 @@
+{
+  "currentUser": {
+    "id": "sofia",
+    "name": "Sofia Martins",
+    "email": "sofia@verdant.garden",
+    "avatar": "1438761681033-6461ffad8d80",
+    "location": "Amsterdam, Netherlands",
+    "bio": "Product designer and urban gardener. Building tools that help people grow their own food.",
+    "website": "verdant.garden",
+    "joined": "March 2020"
+  },
+  "myCampaigns": [
+    { "id": "verdant-indoor-garden", "title": "Verdant — Smart Indoor Garden", "image": "1416879595882-3373a0480b5b", "status": "Active", "raised": 54120, "goal": 50000, "backers": 931, "views": 41877, "daysLeft": 12 },
+    { "id": "verdant-mini", "title": "Verdant Mini — Desk Herb Garden", "image": "1485955900006-10f4d324d411", "status": "Draft", "raised": 0, "goal": 20000, "backers": 0, "views": 0, "daysLeft": 30 },
+    { "id": "balcony-planter", "title": "Self-Watering Balcony Planter", "image": "1459411552884-841db9b3cc2a", "status": "Under Review", "raised": 0, "goal": 30000, "backers": 0, "views": 112, "daysLeft": 45 },
+    { "id": "moss-wall", "title": "Living Moss Wall Panels", "image": "1466692476868-aef1dfb1e735", "status": "Completed", "raised": 38900, "goal": 25000, "backers": 802, "views": 29410, "daysLeft": 0 },
+    { "id": "hydro-cube", "title": "Hydro Cube Starter Kit", "image": "1463936575829-25148e1db1b8", "status": "Cancelled", "raised": 4200, "goal": 40000, "backers": 63, "views": 5310, "daysLeft": 0 }
+  ],
+  "latestContributions": [
+    { "name": "Anna Lindqvist", "avatar": "1544005313-94ddf0286df2", "amount": 99, "reward": "Premium Supporter", "time": "4 min ago" },
+    { "name": "Tomás Rivera", "avatar": "1506794778202-cad84cf45f1d", "amount": 49, "reward": "Early Supporter", "time": "22 min ago" },
+    { "name": "Anonymous", "avatar": "", "amount": 25, "reward": "No reward", "time": "41 min ago" },
+    { "name": "Priya Nair", "avatar": "1573496359142-b8d87734a5a2", "amount": 249, "reward": "Founding Backer", "time": "1 hr ago" },
+    { "name": "Lukas Becker", "avatar": "1500648767791-00dcc994a43e", "amount": 49, "reward": "Early Supporter", "time": "2 hr ago" },
+    { "name": "Chloé Dubois", "avatar": "1534528741775-53994a69daeb", "amount": 10, "reward": "Supporter", "time": "3 hr ago" }
+  ],
+  "backed": [
+    { "campaignId": "ai-language-device", "amount": 149, "reward": "Premium Supporter", "status": "Funding", "delivery": "February 2027", "payment": "Pledged", "date": "12 Sep 2026" },
+    { "campaignId": "wanderlight-game", "amount": 35, "reward": "Digital Edition + Soundtrack", "status": "Funded", "delivery": "November 2027", "payment": "Authorised", "date": "29 Aug 2026" },
+    { "campaignId": "community-library", "amount": 50, "reward": "Name on the Founders' Wall", "status": "Funding", "delivery": "March 2027", "payment": "Pledged", "date": "6 Sep 2026" },
+    { "campaignId": "terra-bottle", "amount": 39, "reward": "Early Supporter", "status": "Funding", "delivery": "January 2027", "payment": "Card update needed", "date": "18 Sep 2026" },
+    { "campaignId": "echoes-of-kepler", "amount": 75, "reward": "Digital Film + Credits", "status": "Funded", "delivery": "October 2027", "payment": "Paid", "date": "15 Aug 2026" },
+    { "campaignId": "golden-hour-album", "amount": 30, "reward": "Signed Vinyl", "status": "Delivered", "delivery": "Delivered 2 Sep 2026", "payment": "Paid", "date": "3 Mar 2026" }
+  ]
+}
