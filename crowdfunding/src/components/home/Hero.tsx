@@ -51,8 +51,13 @@ export function Hero() {
           <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
             <div className="flex items-center gap-3">
               <div className="flex -space-x-2.5">
-                {["1544005313-94ddf0286df2", "1506794778202-cad84cf45f1d", "1573496359142-b8d87734a5a2", "1500648767791-00dcc994a43e"].map((s, i) => (
-                  <Avatar key={s} src={s} name={`Backer ${i}`} size={36} className="ring-2 ring-white" />
+                {[
+                  ["1544005313-94ddf0286df2", "Anna Lindqvist"],
+                  ["1506794778202-cad84cf45f1d", "Tomás Rivera"],
+                  ["1573496359142-b8d87734a5a2", "Priya Nair"],
+                  ["1500648767791-00dcc994a43e", "Lukas Becker"],
+                ].map(([src, name]) => (
+                  <Avatar key={src} src={src} name={name} size={36} className="ring-2 ring-white" />
                 ))}
               </div>
               <div className="text-sm">

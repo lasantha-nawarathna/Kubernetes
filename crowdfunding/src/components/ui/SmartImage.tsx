@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ImageIcon } from "lucide-react";
 import { img } from "@/lib/data";
 import { cn } from "@/lib/cn";
@@ -39,8 +39,15 @@ export function SmartImage({
 }) {
   const [failed, setFailed] = useState(false);
   const [loaded, setLoaded] = useState(false);
+  const ref = useRef<HTMLImageElement>(null);
   const url = img(src, width);
   const g = gradients[hash(alt) % gradients.length];
+
+  // The image may finish (or fail) before hydration attaches onLoad/onError.
+  useEffect(() => {
+    const el = ref.current;
+    if (el?.complete) el.naturalWidth > 0 ? setLoaded(true) : setFailed(true);
+  }, [url]);
 
   return (
     <div className={cn("@container relative overflow-hidden bg-gradient-to-br", g, className)}>
@@ -54,6 +61,7 @@ export function SmartImage({
       {url && !failed && (
         // eslint-disable-next-line @next/next/no-img-element
         <img
+          ref={ref}
           src={url}
           alt={alt}
           loading="lazy"
